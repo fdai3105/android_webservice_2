@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundd" format="color"/>
+    <attr name="backgroundd_2" format="color"/>
+
+    <attr name="textt" format="color"/>
+    <attr name="textt_2" format="color"/>
+
+    <attr name="border" format="color"/>
+</resources>

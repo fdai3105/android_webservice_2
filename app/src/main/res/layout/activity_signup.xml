@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llSignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signup"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents"
+    tools:context=".signup.activitis.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="360dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:id="@+id/tilSignUpEmail"
+            android:textColorHint="@color/text_dark_2"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:hintTextColor="@color/text_dark_2"
+            app:startIconDrawable="@drawable/ic_account"
+            app:startIconTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            app:helperText=" ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCreaterUsersEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_dark"
+                android:hint="You email"
+                android:textColor="@color/text_dark"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:textCursorDrawable="@null" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:helperText=" "
+            android:textColorHint="@color/text_dark_2"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:hintTextColor="@color/text_dark_2"
+            app:passwordToggleTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_lockopen"
+            app:startIconTint="@color/colorPrimary"
+            android:id="@+id/tilSignUpPass"
+            app:errorIconDrawable="@null"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCreaterUsersPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_dark"
+                android:hint="You password"
+                android:textColor="@color/text_dark"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:errorIconDrawable="@null"
+            app:helperText=" "
+            android:textColorHint="@color/text_dark_2"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:hintTextColor="@color/text_dark_2"
+            app:passwordToggleTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_lockopen"
+            app:startIconTint="@color/colorPrimary"
+            android:id="@+id/tilSignUpPassAgain"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCreaterUsersPassAgain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_dark"
+                android:hint="You password"
+                android:textColor="@color/text_dark"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="272dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_button_default"
+        android:fontFamily="@font/robotomedium"
+        android:onClick="btnSignUp"
+        android:text="Join Us"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/robotomedium"
+            android:gravity="center_vertical"
+            android:text="Already have an account?"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dark"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/robotobold"
+            android:onClick="btnSignIn"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

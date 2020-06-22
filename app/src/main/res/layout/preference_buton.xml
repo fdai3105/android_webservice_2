@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/backgroundd"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@android:id/list"
+        android:layout_width="300dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!--  Overriding android ids results automatic persistence / setting of title -->
+            <TextView
+                android:id="@android:id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@android:id/widget_frame"
+                android:fontFamily="@font/robotomedium"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_light"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                tools:text=" " />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference android:layout="@layout/preference_empty" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="setting_darkmode"
+        android:layout="@layout/preference_switch"
+        android:summary="Tap to check on or off"
+        android:title="Dark mode 🌛" />
+
+    <Preference android:layout="@layout/preference_empty" />
+
+    <EditTextPreference
+        android:defaultValue="Fi Đại"
+        android:key="edit"
+        android:layout="@layout/preference_arrow"
+        android:summary="Be alive"
+        android:title="Fi Đại" />
+
+    <Preference android:layout="@layout/preference_empty" />
+
+    <Preference
+        android:layout="@layout/preference_switch"
+        android:title="Buy me a coffe ☕"
+        android:summary="Donate us">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://ff3105.github.io"
+            android:defaultValue="oke" />
+    </Preference>
+
+    <Preference android:layout="@layout/preference_empty" />
+    <Preference android:layout="@layout/preference_empty" />
+
+    <Preference
+        android:key="setting_logout"
+        android:layout="@layout/preference_buton"
+        android:title="Logout" />
+
+    <Preference android:layout="@layout/preference_empty" />
+
+</PreferenceScreen>
